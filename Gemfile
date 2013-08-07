@@ -46,7 +46,7 @@ end
 gem 'rails_12factor', group: :production
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.15.1'
   gem 'thin'
 end
 # Use Capistrano for deployment
