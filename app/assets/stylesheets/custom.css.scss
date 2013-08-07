@@ -1,0 +1,9 @@
+@import "bootstrap";
+@import "flat-ui";
+
+#left_bar{
+	& li{
+      list-style-type:none;
+      margin:2px 0px;
+    }
+}
