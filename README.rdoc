@@ -1,10 +1,13 @@
-== ComproPago
+== ComproPago - Botón de Pago
 
-ComproPago es una plataforma que te ayuda a recibir pagos en tu aplicación móvil.
+ComproPago es una plataforma que te ayuda a recibir pagos en efectivo en tus aplicaciones web o tiendas en línea.
+http://compropago.com
 
 ---
 
 Este DEMO muestra una tienda en línea que usa el Botón de Pago de ComproPago. El Botón de Pago es la manera más sencilla de recibir un pago en efectivo en tu sitio Web.
+
+Beneficios:
 
 - Comienza a recibir pagos en minutos.
 - Acreditamos el pago de tus clientes en menos de 8 horas.

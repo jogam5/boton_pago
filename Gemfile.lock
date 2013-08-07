@@ -124,7 +124,7 @@ DEPENDENCIES
   flat-ui-rails
   jbuilder (~> 1.2)
   jquery-rails
-  pg (= 0.12.2)
+  pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
