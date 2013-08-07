@@ -7,7 +7,9 @@ gem "flat-ui-rails"
 gem "bootstrap-sass", "~> 2.3.1.2"
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+	gem 'sqlite3'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -40,7 +42,10 @@ end
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+group :production do
+  gem 'pg', '0.12.2'
+  gem 'thin'
+end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
