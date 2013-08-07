@@ -42,6 +42,9 @@ end
 
 # Use unicorn as the app server
 # gem 'unicorn'
+
+gem 'rails_12factor', group: :production
+
 group :production do
   gem 'pg'
   gem 'thin'
