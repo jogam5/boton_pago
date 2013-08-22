@@ -5,7 +5,8 @@ gem 'rails', '4.0.0'
 
 gem "flat-ui-rails"
 gem "bootstrap-sass", "~> 2.3.1.2"
-gem 'newrelic_rpm'
+gem "newrelic_rpm", "~> 3.5.5.540.dev"
+gem 'thin'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -48,7 +49,6 @@ gem 'rails_12factor', group: :production
 
 group :production do
   gem 'pg', '0.15.1'
-  gem 'thin'
 end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
