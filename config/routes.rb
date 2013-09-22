@@ -1,4 +1,5 @@
 ExampleButton::Application.routes.draw do
+  get "webhooks/receptor"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,9 +7,8 @@ ExampleButton::Application.routes.draw do
   root 'static_pages#index'
 
   #match 'webhooks/receptor' => 'webhook#receptor', via: [:get, :post]
-  match 'webhooks/stripe' => 'webhook#stripe', via: [:get, :post]
-
-  get 'webhooks/receptor'
+  #match 'webhooks/stripe' => 'webhook#stripe', via: [:get, :post]
+  #get 'webhooks/receptor'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
