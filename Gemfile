@@ -9,7 +9,7 @@ gem "newrelic_rpm", "~> 3.5.5.540.dev"
 gem 'thin'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
-gem "localtunnel", "~> 0.3"
+gem 'stripe_event'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
