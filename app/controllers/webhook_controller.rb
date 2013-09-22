@@ -8,11 +8,22 @@ class WebhookController < ApplicationController
 
   	data_json = JSON.parse request.body.read
 
-    p data_json['data']['object']['customer']
-
     if data_json[:type] == "invoice.payment_succeeded"
-      make_active(data_event)
+
+     # p data_json['data']['object']['customer']
     end
+
+    @user = User.find_by_id(data_json['data']['object']['customer'].to_i)
+
+    if( !@user )
+      @user = {}
+    end
+
+    render json: data_json
+
+
+
+
 
   	#if Rails.env == "production"
 	  	#data_json = JSON.parse request.body.read
@@ -21,7 +32,7 @@ class WebhookController < ApplicationController
 	      #p data_json['data']['object']['customer']	
 	      #@user = User.find_by_id(data_json['data']['object']['customer'].to_i)
 	      #puts('webhook:' +data_json['data']['object']['customer'])
-	      @amount = data_json['data']['object']['customer']
+	      #@amount = data_json['data']['object']['customer']
 	    #end
 	#else
 		#@amount = "Testing"

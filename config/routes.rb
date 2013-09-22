@@ -5,7 +5,8 @@ ExampleButton::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
 
-  match 'webhooks/receptor' => 'webhook#receptor', via: [:get, :post]
+  #match 'webhooks/receptor' => 'webhook#receptor', via: [:get, :post]
+  get 'webhooks/receptor'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
