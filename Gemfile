@@ -8,9 +8,6 @@ gem "bootstrap-sass", "~> 2.3.1.2"
 gem "newrelic_rpm", "~> 3.5.5.540.dev"
 gem 'thin'
 
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
-gem 'stripe_event'
-
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'

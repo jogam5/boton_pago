@@ -3,13 +3,16 @@ ExampleButton::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root :to => "static_pages#index"
+  match "webhooks/receiver" => "webhooks#receiver", :via => :post
+  #get "webhooks/receiver" => "webhooks#notifications"
 
   #get "webhooks/receptor"
-  #post "webhooks/receiver"
+  #post "webhooks/receiver" => "webhooks#receiver"
 
-  match 'webhooks/receiver' => 'webhooks#receiver', via: [:get, :post]
-  resources :webhooks
+
+  #match 'webhooks/receiver' => 'webhooks#receiver', via: [:post]
+  #resources :webhooks
 
   #match 'webhooks/stripe' => 'webhook#stripe', via: [:get, :post]
   #get 'webhooks/receptor'
