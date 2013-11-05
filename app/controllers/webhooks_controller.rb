@@ -6,5 +6,4 @@ class WebhooksController < ApplicationController
   	data_json = JSON.parse request.body.read
     render json: data_json
   end
-  
 end
