@@ -4,7 +4,6 @@ ExampleButton::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root :to => "static_pages#index"
-  match "webhooks/receiver" => "webhooks#receiver", :via => :post
   #get "webhooks/receiver" => "webhooks#notifications"
 
   #get "webhooks/receptor"
